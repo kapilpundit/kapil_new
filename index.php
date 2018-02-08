@@ -5,5 +5,5 @@ echo "This is dev branch";
 echo "dev branch will use by developers";
 echo "This is development- s-111 branch";
 
-echo "hanges by developer : Shubhashish";
+echo "Changes by developer : Shubhashish";
 ?>
