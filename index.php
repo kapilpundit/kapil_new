@@ -1,12 +1,19 @@
-<?php
-echo "This is development - s-111 file";
-echo "<br />";
-echo "This is dev branch";
-echo "dev branch will use by developers";
-echo "This is development- s-111 branch";
+<!DOCTYPE html>
+<html>
 
-echo "Changes by developer : Shubhashish";
-echo "Changes by developer : dev";
-echo "Shubhashish's work is over";
-echo "dev's work is over";
-?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GIT TESTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <ul>
+        <li>Changes from dev branch</li>
+    </ul>
+
+</body>
+
+</html>
