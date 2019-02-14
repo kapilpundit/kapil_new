@@ -1,0 +1,54 @@
+<mat-accordion>
+
+  <mat-expansion-panel *ngFor="let candidate of candidates">
+
+    <mat-expansion-panel-header>
+
+      <mat-panel-title>
+        Name: {{candidate.name}}
+      </mat-panel-title>
+
+      <mat-panel-title>
+        <button mat-mini-fab class="btn-info">
+          {{candidate.votes}}
+        </button>
+      </mat-panel-title>
+
+      <mat-panel-description>
+        {{candidate.party}}
+      </mat-panel-description>
+
+    </mat-expansion-panel-header>
+
+    <div class="row">
+      <div class="col-md-2">
+        {{candidate.id}}
+      </div>
+      <div class="col-md-2">
+        <img [src]="candidate.pic" [alt]="candidate.name" [ngStyle]="picStyle">
+      </div>
+      <div class="col-md-3">
+        {{candidate.party}}
+      </div>
+      <div class="col-md-3">
+        {{candidate.legislativeAssembly}}
+      </div>
+      <div class="col-md-2">
+        {{candidate.votes}}
+      </div>
+    </div>
+
+    <mat-action-row>
+      <button mat-raised-button mat-icon-button class="btn-success" (click)="addVote(candidate.id)">
+        <mat-icon aria-label="Vote">exposure_plus_1</mat-icon>
+      </button>
+
+      <button mat-raised-button mat-icon-button class="btn-danger" (click)="removeVote(candidate.id)"
+        [disabled]="!candidate.votes">
+        <mat-icon aria-label="Remove vote">exposure_neg_1</mat-icon>
+      </button>
+    </mat-action-row>
+
+  </mat-expansion-panel>
+
+</mat-accordion>
